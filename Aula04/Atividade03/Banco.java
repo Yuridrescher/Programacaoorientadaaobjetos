@@ -63,13 +63,12 @@ public class Banco {
             return;
         }
 
-        System.out.println("\n Iniciando Transferência ");
-        if (origem.sacar(valor)) { 
+        System.out.println("\nIniciando Transferência");
+        if (origem.sacar(valor)) {
             destino.depositar(valor);
             System.out.println("Transferência de R$ " + valor + " concluída com sucesso.");
         } else {
             System.out.println("Transferência cancelada por falha no saque.");
         }
-        
     }
 }
